@@ -58,5 +58,41 @@ header{
 }
 
 body{
-	background-color: #0071BC;
+	background-color: #59ABE3;
+}
+
+.list-content{
+	margin-left: 25em;
+	margin-right: 25em;
+	margin-bottom: 25em;
+}
+
+.item-form{
+	background-color: #F4B350;
+	padding: 1em;
+	text-align: center;
+}
+
+.item-form form{
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+.list{
+	background-color: #F2F1EF;
+	border-bottom-right-radius: 10%;
+	border-bottom-left-radius: 10%;
+	min-width: 300px;
+	min-height: 500px;
+}
+
+input#item{
+	border: none;
+	color: #777;
+	float: left;
+}
+
+.category-dropdown{
+	width: 30%;
+	float: left;
 }
