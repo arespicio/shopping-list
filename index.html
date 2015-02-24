@@ -3,20 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="container">
 	<header class="title">
 		<h1>Shopping List</h1>
-		<ul class="icons">
-			<li>(Shopping cart moving left to right)</li>
+		<ul class="phrase tweleve columns">
+			<li>create</li>
+			<li>organize</li>
+			<li>shop</li>
 		</ul>
 	</header>
-	<section class="list-content">
+	<section class="list-content eleven columns">
 		<div class="item-form">
-			<form>
-				<input type="text" name="item" id="item" value="enter item">
-				<div class="category-dropdown">
+			<form class="row">
+				<input type="text" name="item" class="four columns" id="item" value="enter item">
+				<div class="category-dropdown four columns">
 					<!-- Category Dropdown trigger-->
 					<button>Category</button>
 
@@ -32,13 +37,12 @@
 						<li>None</li>
 					</ul>
 				</div>
-				<input type="submit" value="Add Item">
+				<input type="submit" class="three columns" id="add-item" value="Add Item">
 			</form>
 		</div>
 		<div class="list">
-			
 		</div>
-			
+		<div class=""></div>
 	</section>
 	
 </body>
