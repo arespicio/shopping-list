@@ -1,6 +1,6 @@
 
 
-/*----------- PAGE STYLES --------------------
+/*----------- GENERAL STYLES --------------------
 ---------------------------------------------*/
 div,
 header{
@@ -29,6 +29,9 @@ button,
 	text-transform: uppercase;
 }
 
+/*----------- HEADER STYLES --------------------
+---------------------------------------------*/
+
 .title{
 	padding: 5em;
 	text-align: center;
@@ -40,8 +43,8 @@ button,
 	font-size: 4em;
 }
 
-.phrase ul{
-	margin: 0 auto;
+.phrase{
+	padding-left: 30%;
 }
 
 .phrase li{
@@ -56,6 +59,21 @@ button,
 	border-right: none;
 }
 
+@media (max-width: 850px){
+    .phrase{
+	padding-left: 15%;
+}
+}
+
+@media (max-width: 500px){
+    .phrase{
+	padding: 0;
+}
+}
+
+/*----------- GENERAL LIST STYLES --------------------
+---------------------------------------------*/
+
 .list-content{
 	margin-bottom: 25em;
 	min-width: 300px;
@@ -63,6 +81,9 @@ button,
 	position: relative;
 
 }
+
+/*----------- LIST INPUT STYLES --------------------
+---------------------------------------------*/
 
 form {
 	padding-top: 1em;
@@ -73,14 +94,6 @@ form {
 	background-color: #F4B350;
 	padding: 1em 2em;
 	text-align: center;
-}
-
-.list{
-	background-color: #F2F1EF;
-	border-bottom-right-radius: 10%;
-	border-bottom-left-radius: 10%;
-	min-width: 300px;
-	min-height: 500px;
 }
 
 input#item{
@@ -96,4 +109,42 @@ input#item{
 .category-dropdown{
 	width: 30%;
 	float: left;
+}
+
+/*----------- LIST STYLES --------------------
+---------------------------------------------*/
+
+.top-row{
+	margin-top: 3em;
+}
+
+.list{
+	background-color: #F2F1EF;
+	border-bottom-right-radius: 10%;
+	border-bottom-left-radius: 10%;
+	min-width: 300px;
+	min-height: 500px;
+}
+
+.one-third{
+	padding: 2em;
+}
+
+.one-third h4{
+	background-color: #F4B350;
+	color: #F2F1EF;
+	text-align: center;
+}
+
+.list-1 li:first-child{
+	text-decoration: line-through;
+}
+
+.list-1 li i{
+	float: right;
+	color: red;
+}
+
+.list-1 li:hover{
+
 }
