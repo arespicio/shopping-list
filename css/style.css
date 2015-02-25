@@ -136,15 +136,15 @@ input#item{
 	text-align: center;
 }
 
-.list-1 li:first-child{
+.produce-list li:first-child{
 	text-decoration: line-through;
 }
 
-.list-1 li i{
+.produce-list li i{
 	float: right;
 	color: red;
 }
 
-.list-1 li:hover{
+.produce-list li:hover{
 
 }
