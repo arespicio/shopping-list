@@ -142,6 +142,16 @@ input#item{
 	text-align: center;
 }
 
+.dairy,
+.meat-deli,
+.seafood,
+.grocery,
+.frozen,
+.household,
+.misc{
+	display: none;
+}
+
 .produce-list li:first-child{
 	text-decoration: line-through;
 }
