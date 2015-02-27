@@ -142,7 +142,7 @@ input#item{
 	text-align: center;
 }
 
-.dairy,
+/*.dairy,
 .meat-deli,
 .seafood,
 .grocery,
@@ -150,17 +150,17 @@ input#item{
 .household,
 .misc{
 	display: none;
-}
+}*/
 
-.produce-list li:first-child{
+.list-produce li:first-child{
 	text-decoration: line-through;
 }
 
-.produce-list li i{
+.list-produce li i{
 	float: right;
 	color: red;
 }
 
-.produce-list li:hover{
+.list-produce li:hover{
 
 }

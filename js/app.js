@@ -1,8 +1,11 @@
 $(document).ready(function() {
-	$('#add-item').click(function() {
-		$('')
+	$(".hide").hide();
 
-		$('.produce-list').append('<li>' + $('#item').val() + '<i class="fa fa-times-circle show"></i></li>')  
+	$('#add-item').click(function() {
+        var catName = $(".category-dropdown option:selected").text();
+        $('.' + catName).show();
+
+		$('.list-produce').append('<li>' + $('#item').val() + '<i class="fa fa-times-circle show"></i></li>')  
 	});
 
 });
