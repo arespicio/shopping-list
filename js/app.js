@@ -1,21 +1,20 @@
 $(document).ready(function() {
 	$(".hide").hide();
 
+    //Adds item and category 
 	$('#add-item').click(function() {
         var catName = $(".category-dropdown option:selected").text();
-        $('.' + catName).show();
-
-        $('.list-' + catName).append('<li>' + $('#item').val() + '<i class="fa fa-times-circle show"></i>')
+        var itemText = $('#item').val();
+        $('.' + catName).show(); //category
+        $('.list-' + catName).append('<li><span>' + itemText + '</span><i class="fa fa-times-circle show"></i>')//item
 	});
 
+	//Removes list item when circle "delete" is clicked
 	$('.list').on('click', '.show', function(){
 		$(this).parent('li').remove();
 	});
 
-	// $('.list').on('mouseenter', 'li', function(){
-	// 	$(this).append( '<i class="fa fa-times-circle delete"></i></li>')
-	//     });
-	// $('.list').on('mouseleave', 'li', function(){
-	// 	$('li').remove( '.fa-times-circle')
-	// 	});
+	$('.list').on('click', 'span', function(){
+		$(this).toggleClass('bought');
+	});
 });

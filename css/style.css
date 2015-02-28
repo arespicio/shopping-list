@@ -147,6 +147,10 @@ input#item{
 	color: red;
 }
 
+.bought{
+	text-decoration: line-through;
+}
+
 .list-produce li:first-child{
 	text-decoration: line-through;
 }
