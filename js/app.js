@@ -8,6 +8,10 @@ $(document).ready(function() {
         $('.list-' + catName).append('<li>' + $('#item').val() + '<i class="fa fa-times-circle show"></i>')
 	});
 
+	$('.list').on('click', '.show', function(){
+		$(this).parent('li').remove();
+	});
+
 	// $('.list').on('mouseenter', 'li', function(){
 	// 	$(this).append( '<i class="fa fa-times-circle delete"></i></li>')
 	//     });
