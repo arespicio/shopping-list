@@ -142,6 +142,10 @@ input#item{
 	text-align: center;
 }
 
+.list li{
+	cursor: pointer;
+}
+
 .show{
 	float: right; 
 	color: red;
@@ -151,15 +155,4 @@ input#item{
 	text-decoration: line-through;
 }
 
-.list-produce li:first-child{
-	text-decoration: line-through;
-}
 
-.list-produce li i{
-	float: right;
-	color: red;
-}
-
-.list-produce li:hover{
-
-}
