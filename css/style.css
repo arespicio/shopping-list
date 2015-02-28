@@ -142,15 +142,10 @@ input#item{
 	text-align: center;
 }
 
-/*.dairy,
-.meat-deli,
-.seafood,
-.grocery,
-.frozen,
-.household,
-.misc{
-	display: none;
-}*/
+.show{
+	float: right; 
+	color: red;
+}
 
 .list-produce li:first-child{
 	text-decoration: line-through;

@@ -5,7 +5,13 @@ $(document).ready(function() {
         var catName = $(".category-dropdown option:selected").text();
         $('.' + catName).show();
 
-		$('.list-produce').append('<li>' + $('#item').val() + '<i class="fa fa-times-circle show"></i></li>')  
+        $('.list-' + catName).append('<li>' + $('#item').val() + '<i class="fa fa-times-circle show"></i>')
 	});
 
+	// $('.list').on('mouseenter', 'li', function(){
+	// 	$(this).append( '<i class="fa fa-times-circle delete"></i></li>')
+	//     });
+	// $('.list').on('mouseleave', 'li', function(){
+	// 	$('li').remove( '.fa-times-circle')
+	// 	});
 });
