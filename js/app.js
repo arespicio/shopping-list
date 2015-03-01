@@ -2,6 +2,13 @@ $(document).ready(function(){
 	
 	$(".hide").hide();
 
+	//enter key same function as #add-item click event
+	$('#item').keyup(function(event){
+		if(event.keyCode == 13) {
+			$('#add-item').click();
+		};
+	});
+
     //Adds item and category 
 	$('#add-item').click(function() {
         var catName = $(".category-dropdown option:selected").text();
