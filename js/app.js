@@ -9,18 +9,11 @@ $(document).ready(function(){
         if (itemText == '')  return;
 
         $('.' + catName).show(); //category
-        $('.list-' + catName).append('<li class="ui-state-default"><span title="purchased">' + itemText + '</span><i class="fa fa-times-circle show" title="delete"></i>')//item
-
-   $('#item').keydown(function(event){
-		if(key == 13) {
-			event.preventDefault();
-			return false;
-		};
+        $('.list-' + catName).append('<li class="ui-state-default"><span title="purchased">' + itemText + '</span><i class="fa fa-times-circle show" title="delete"></i>');//item
 	});
 
     //resets item input area after "add item" clicked
         $(this).closest('form').find("input[type=text]").val("");
-	});
 
 	//Removes list item when circle "delete" is clicked
 	$('.list').on('click', '.show', function(){
@@ -34,5 +27,5 @@ $(document).ready(function(){
 
     //adds sortable function to categories and items in list
 	$('#sortable').sortable();
-	$('sortable').disableSelection();
+	$('#sortable').disableSelection();
 });
