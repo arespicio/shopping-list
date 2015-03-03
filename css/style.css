@@ -116,6 +116,24 @@ input#item{
 	text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+	input#add-item,
+	input#item,
+	.category-dropdown{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.four.columns{
+		width: 40%
+	}
+
+	.three.columns{
+		width: 100%;
+	}
+}
 
 /*----------- LIST STYLES --------------------
 ---------------------------------------------*/
