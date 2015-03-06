@@ -17,10 +17,11 @@ $(document).ready(function(){
 
         $('.' + catName).show(); //category
         $('.list-' + catName).append('<li class="ui-state-default"><span title="purchased">' + itemText + '</span><i class="fa fa-times-circle show" title="delete"></i>');//item
+        $('#item').val("");//resets item input area after "add item" clicked
 	});
 
     //resets item input area after "add item" clicked
-        $(this).closest('form').find("input[type=text]").val("");
+        // $(this).closest('form').find("input[type=text]").val("");
 
 	//Removes list item when circle "delete" is clicked
 	$('.list').on('click', '.show', function(){
